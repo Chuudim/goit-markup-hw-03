@@ -44,6 +44,12 @@ color: var(--black-color);
 --black-color: #000000
 }
 
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 
 
 
@@ -77,7 +83,7 @@ background: #ECECEC; */
 /* Header */
 
 .header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
@@ -135,7 +141,7 @@ margin-right: 0%;
     align-items:center;
 }
 
-.adress-post {
+.list-item {
     margin-right: 50px;
 }
 
@@ -310,12 +316,13 @@ font-weight: 700;
 }
 
 .team-item {
+    background-color: var(--background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-list {
-    padding: 30px;
+    padding: 30px 0;
 }
 
 
@@ -340,6 +347,7 @@ font-weight: 700;
 
 .adress {
     font-style: normal;
+    margin-top: 20px;
 }
 
 .footer-adress {
@@ -363,11 +371,8 @@ font-weight: 700;
      
 }
 
-.footer-list {
-    padding-top: 20px;
-}
 
-.footer-item {
+.footer-item:not(:first-child) {
 margin-top: 9px;
 }
 
@@ -394,12 +399,9 @@ margin-top: 9px;
         border-radius: 4px;
         border-color: transparent;
         padding: 6px 22px;
+        border: none;
 }
- .current {
-  min-width: 73px;
-  min-height: 38px;
- }
- 
+/*  
  .second {
      min-width: 125px;
      min-height: 38px;
@@ -420,7 +422,7 @@ margin-top: 9px;
      min-width: 130px;
      min-height: 38px;
  }
-
+ */
 
 
 
@@ -465,7 +467,6 @@ margin-top: 9px;
         line-height: calc(30 / 16);
         /* identical to box height, or 188% */
         color: var(--title-text-color);
-        margin-bottom: 20px;
 }
 
 .examples-item {
@@ -485,6 +486,7 @@ margin-top: 9px;
 }
 
 .examples-border {
-border: 1px solid #EEEEEE; 
-padding: 20px;
+border: 1px solid #EEEEEE;
+border-top: 0px solid #EEEEEE;
+padding: 20px 24px;
 }
